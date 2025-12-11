@@ -24,6 +24,7 @@ const produto = {
   preco: document.querySelector("#preco"),
   formulario:document.querySelector("#form-produto"),
   lista:[],
+    
 };
 
 // Adiciona um "ouvinte" para capturar o disparo do evento de submit do formulário
@@ -42,6 +43,7 @@ produto.formulario.addEventListener("submit",(evento) => {
 function listProdutos(item){
   produto.lista.push(item);
   console.log(produto.lista);
+
 }
 
 
@@ -50,9 +52,6 @@ cliente.formulario.addEventListener("submit", (evento) => {
   evento.preventDefault(); // Previne o reload da página
   consultarCEP(cep.value);
 });
-
-
-
 
 // Função que faz a busca do CEP digitado
 async function consultarCEP(cep) {
