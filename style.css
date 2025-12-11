@@ -17,7 +17,7 @@ body {
 }
 
 #cpf {
-  max-width: 20%;
+  max-width: 60%;
 }
 
 #fieldset-endereco {
@@ -30,12 +30,12 @@ body {
 }
 
 #cep{
-  max-width: 20%;
+  max-width: 60%;
 }
 
 
 #uf{
-  max-width: 10%;
+  max-width: 20%;
 
 }
 #div-complemento{
@@ -43,7 +43,7 @@ body {
   gap: 10px;
 }
 
-div.cep,#div-logradouro,#div-numero,#div-complemento-container,#div-bairro{
+#div-cep,#div-logradouro,#div-numero,#div-complemento-container,#div-bairro{
   display: flex;
   flex-direction: column;
   gap: 10px;

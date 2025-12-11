@@ -1,4 +1,3 @@
-console.log("OK");
 
 // Objeto que armazena os dados do cliente
 const cliente = {
@@ -46,7 +45,6 @@ async function consultarCEP(cep) {
 //função para receber os dados de CEP e insere o valor dos input
 function inserirEndereco(dadosDoCEP){
   endereco.logradouro.value= dadosDoCEP.logradouro
-  endereco.numero.value = dadosDoCEP.numero
   endereco.complemento.value = dadosDoCEP.complemento
   endereco.bairro.value = dadosDoCEP.bairro
   endereco.cidade.value =dadosDoCEP.cidade
