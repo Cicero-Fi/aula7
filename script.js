@@ -17,11 +17,42 @@ const endereco = {
   uf: document.querySelector("#uf"),
 };
 
+// Objeto que armazena os dados dos produtos
+const produto = {
+  quantidade: document.querySelector("#quantidade"),
+  produto: document.querySelector("#produto"),
+  preco: document.querySelector("#preco"),
+  formulario:document.querySelector("#form-produto"),
+  lista:[],
+};
+
+// Adiciona um "ouvinte" para capturar o disparo do evento de submit do formulário
+produto.formulario.addEventListener("submit",(evento) => {
+  evento.preventDefault();
+
+ let item ={
+  quantidade:produto.quantidade.value,
+  produto:produto.produto.value,
+  preco:produto.preco.value,
+ };
+ listProdutos(item)
+});
+
+//função para inserir quantidade nome preço do produto no objeto"Produto lista"(array)
+function listProdutos(item){
+  produto.lista.push(item);
+  console.log(produto.lista);
+}
+
+
 // Adiciona um "ouvinte" para capturar o disparo do evento de submit do formulário
 cliente.formulario.addEventListener("submit", (evento) => {
   evento.preventDefault(); // Previne o reload da página
   consultarCEP(cep.value);
 });
+
+
+
 
 // Função que faz a busca do CEP digitado
 async function consultarCEP(cep) {
@@ -51,3 +82,5 @@ function inserirEndereco(dadosDoCEP){
   endereco.uf.value = dadosDoCEP.uf
 
 }
+
+
