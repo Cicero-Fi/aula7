@@ -43,7 +43,6 @@ produto.formulario.addEventListener("submit",(evento) => {
 function listProdutos(item){
   produto.lista.push(item);
   console.log(produto.lista);
-
 }
 
 
