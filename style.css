@@ -1,6 +1,7 @@
 form {
   margin-left:10%;
   max-width:20% ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -93,4 +94,8 @@ padding: 20px;
 gap: 20px;
 max-width: 50%;
 
+}
+
+#btn-produto,#adicionar{
+  font-family: 'Times New Roman', Times, serif;
 }

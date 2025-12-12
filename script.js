@@ -45,6 +45,17 @@ function listProdutos(item){
   console.log(produto.lista);
 }
 
+function mostrarProdutos(listaDeprodutos){
+  listaDeprodutos.foreac((produto) => {
+    console.log(produto.nome);
+
+  });
+}
+
+
+
+
+
 
 // Adiciona um "ouvinte" para capturar o disparo do evento de submit do formulário
 cliente.formulario.addEventListener("submit", (evento) => {

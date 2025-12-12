@@ -12,9 +12,9 @@
       <div>
         <fieldset id="fieldset-cliente">
           <legend>Dados do Cliente</legend>
-          <label for="nome-cliente">Nome do Cliente</label>
+          <label for="nome-cliente">Nome do Cliente :</label>
           <input type="text" name="nome-cliente" id="nome-cliente" />
-          <label for="cpf">CPF</label>
+          <label for="cpf">CPF :</label>
           <input type="text" name="cpf" id="cpf" />
         </fieldset>
       </div>
@@ -23,37 +23,37 @@
           <legend>Endereço</legend>
 
           <div id="div-cep">
-            <label for="cep">CEP</label>
+            <label for="cep">CEP :</label>
             <input type="number" name="cep" id="cep" required />
           </div>
 
           <div id="div-logradouro">
-            <label for="logradouro">Logradouro</label>
+            <label for="logradouro">Logradouro :</label>
             <input type="text" name="logradouro" id="logradouro" />
 
               <div id="div-numero">
-               <label for="numero">Numero</label>
+               <label for="numero">Numero:</label>
                <input type="text" name="numero" id="numero" />
               </div>
 
               <div id="div-complemento-container">
-                <label for="complemento">Complemento</label>
+                <label for="complemento">Complemento :</label>
                 <input type="text" name="complemento" id="complemento" />
               </div>
             
           </div>
 
           <div id="div-bairro">
-            <label for="bairro">Bairro</label>
+            <label for="bairro">Bairro :</label>
             <input type="text" name="bairro" id="bairro" />
-            <label for="cidade">Cidade</label>
+            <label for="cidade">Cidade :</label>
             <input type="text" name="cidade" id="cidade" />
-            <label for="uf">UF</label>
+            <label for="uf">UF :</label>
             <input type="text" name="uf" id="uf" />
           </div>
           
         </fieldset>
-        <button>ADICIONAR</button>
+        <button id="adicionar" >ADICIONAR</button>
       </div>
     </form>
 
@@ -62,16 +62,17 @@
     <fieldset id="fieldsetprodutos">
       <legend>Digite o produto</legend>
 
+
+        <div id="produto-container">
+         <label for="produto">Produto:</label>
+         <input type="text" name ="oproduto" id="produto"required>
+        </div>
+
       <div id="quantidade-container"> 
        <label for="quantidade">Quantidade:</label>
        <input type="number" name ="quantidade" id="quantidade" required>
-      </div>
-    
-      <div id="produto-container">
-         <label for="produto">Produto:</label>
-        <input type="text" name ="oproduto" id="produto"required>
-      </div>
-
+      </div>  
+     
       <div id="preco-container">
         <label for="preco">Preço:</label>
        <input type="number" name ="preco" id="preco"required>
@@ -82,7 +83,7 @@
 
     </fieldset>
 
-    <button>CADASTRAR</button>
+    <button id="btn-produto" >MOSTRAR PRODUTO</button>
     </form>
   </body>
 </html>
